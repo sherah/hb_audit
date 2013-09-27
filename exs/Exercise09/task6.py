@@ -8,3 +8,9 @@ eg:
     l = {"H", "e", "l", "l", "o"}
 """
 s = "Hi there, my name is Slim"
+
+l = []
+for i in s:
+	l.append(i)
+
+print l

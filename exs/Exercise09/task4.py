@@ -10,3 +10,9 @@ eg:
 
 """
 s = "Hi there, my name is Slim"
+
+s2 = s[0:5]
+s3 = s[5:]
+
+print s2
+print s3

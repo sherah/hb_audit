@@ -9,3 +9,8 @@ c, 4
 d, 6
 """
 d = {"q": 5, "m": 3, "z":2, "a": 10}
+keys = d.keys()
+sorted_keys = sorted(keys)
+for i in sorted_keys:
+	print "%s, %r" % (i, d[i])
+

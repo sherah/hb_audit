@@ -12,3 +12,17 @@ eg:
 """
 d1 = {"a": 5, "c": 7, "d": 9, "q": 15}
 d2 = {"a": 6, "e": 13, "g": 6, "q": 1}
+
+d1keys = d1.keys()
+d2keys = d2.keys()
+
+d1items = d1.items()
+d2items = d2.items()
+
+d3 = d1items + d2items
+sortedd3 = sorted(d3)
+
+
+
+
+print sortedd3
