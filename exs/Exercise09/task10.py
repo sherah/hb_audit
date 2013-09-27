@@ -13,3 +13,9 @@ eg:
     3. I must go.
 
 """
+
+s2 = s.splitlines()
+
+for i in range(len(s2)):
+	print "Line %r: %r" % (i, s2[i])
+

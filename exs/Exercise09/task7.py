@@ -8,21 +8,29 @@ Given the list l composed of tuples, sort the list by the second item in the tup
 """
 l = [(1,2), (3,1), (17, 35), (81,20)]
 
-#for loop iterating over l pairs:
-newlist = []
-for i in range(len(l)-1):
-  i1 = str(l[i]).split(",")
-  i2 = str(l[i+1]).split(",")
-  if(i1[1] > i2[1]):
-    newlist.append(l[i+1])
-    newlist.append(l[i])
-  else:
-    newlist.append(l[i])
-#if value 1 > value 2, push value 2 and then push value 1
-#else push the value to the new list
+secondList = []
+
+def flip_tuples(l):
+  newList = []
+  for t in l:
+    firstT = t[0]
+    secondT = t[1]
+    newTuple = (secondT, firstT)
+    newList.append(newTuple)
+  return newList
+
+#flip the tuples
+secondList = flip_tuples(l)
+
+#sort
+sorted_secondList = sorted(secondList)
+
+#flip them back
+finalList = flip_tuples(sorted_secondList)
+
 
 print l
-print newlist
+print finalList
 
 
 

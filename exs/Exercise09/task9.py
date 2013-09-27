@@ -14,6 +14,13 @@ eg:
 d1 = {"a": 5, "c": 7, "d": 9, "q": 15}
 d2 = {"a": 6, "e": 13, "g": 6, "q": 1}
 
-d3 = d1 + d2
+d3 = {}
+d3.update(d1)
+
+for key, value in d2.items():
+	if(key in d3):
+		d3[key] += value
+	else:
+		d3[key] = value
 
 print d3
